@@ -1,0 +1,94 @@
+/* HEADER*/
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.a-ul-inicio {
+    color: rgb(255, 119, 0);
+    display: inline-block;
+    padding: 0px 30px;
+    font-size: 20px;
+    list-style: none;
+    font-weight: 100;
+    
+}
+
+.a-ul-inicio1{
+    color: #09f;
+}
+
+.a-ul-inicio-hover:hover{
+    color: #09f;
+
+}
+
+ul li{
+
+    display: inline-block;
+    padding: 0px 30px;
+    font-size: 20px;
+
+} 
+
+header {
+    background-color: white;
+    margin: none;
+    width: 100%;
+    clear: both;
+}
+
+/*BODY*/
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #09f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 50px;
+    text-align: left;
+}
+
+.footer-contenido{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footer-section{
+    flex: 1;
+    text-align: center;
+ 
+}
+
+h3{
+    color: white;
+    display: inline-block;
+}
+
+.a-footer-email{
+    color: black;
+}
+
+i{
+    color: white;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    
+}

@@ -49,12 +49,18 @@ header {
 
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    
 }
 
 .map-wrap{
-    text-align: right;
-    display: flex;
+    display: inline-block;
+    text-align: center;
+    padding-right: 5%;
+    border: 0;
+    margin-left: -20%;
 }
 
 
@@ -66,8 +72,9 @@ body{
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    width: 300px;
-    flex-wrap: wrap;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
 }
 
 h1 {

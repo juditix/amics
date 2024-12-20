@@ -91,6 +91,41 @@ h1{
     line-height: 1.5;
 }
 
+.about_main{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    gap: 3em;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.element_50{
+    width: 50%;
+}
+
+.about_icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #09f;
+}
+
+
+
 
 /*FOOTER*/
 

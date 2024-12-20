@@ -92,29 +92,32 @@ h1{
 }
 
 .about_main{
-    width: 90%;
-    display: flex;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    gap: 3em;
-    overflow: hidden;
-    margin-bottom: 50px;
+    padding: 5%;
+    display: grid;
 }
 
-.element_50{
-    width: 50%;
+.about_element {
+    display: grid; /* Para ordenar por columnas */
+    grid-template-columns: 1fr; /* Una columna por defecto */
+    gap: 16px; /* Espacio entre cada caja */
 }
+
+@media (min-width: 400px) { /* Cambia 'width' a 'min-width' */
+    .about_element {   
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    } 
+}
+
+@media (min-width: 600px) {
+    .about_element {   
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    } 
+}
+
 
 .about_icons{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-items: center;
-    width: 260px;
-    overflow: hidden;
-    margin: 0 auto;
+    font-size: 15px;
+    display: grid;
 }
 
 h4{

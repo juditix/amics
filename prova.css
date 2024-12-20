@@ -1,0 +1,33 @@
+.about_main{
+    padding: 5%;
+    display: grid;
+}
+
+.about_element{
+    display:grid; /* para ordenar por columnas */
+    grid-template-columns: 1fr; 
+    gap: 16px; /* deja un margen entre cada caja*/
+}
+
+@media (width > 400px) {    /* Para ajustar a distintos tamaños*/
+    .about_element{   
+        grid-template-columns: 1fr 1fr; /* 1fr es una columna */
+    } 
+}
+@media (width > 600px) {
+    .about_element{   
+        grid-template-columns: 1fr 1fr 1fr; /* 3 columnas */
+    } 
+}
+
+.about_icons{
+    font-size: 15px;
+    display: grid;
+}
+
+h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #09f;
+}

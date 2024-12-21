@@ -1,33 +1,95 @@
-.about_main{
-    padding: 5%;
-    display: grid;
+/* HEADER*/
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
 }
 
-.about_element{
-    display:grid; /* para ordenar por columnas */
-    grid-template-columns: 1fr; 
-    gap: 16px; /* deja un margen entre cada caja*/
+a, a:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
-@media (width > 400px) {    /* Para ajustar a distintos tamaños*/
-    .about_element{   
-        grid-template-columns: 1fr 1fr; /* 1fr es una columna */
-    } 
-}
-@media (width > 600px) {
-    .about_element{   
-        grid-template-columns: 1fr 1fr 1fr; /* 3 columnas */
-    } 
-}
-
-.about_icons{
-    font-size: 15px;
-    display: grid;
-}
-
-h4{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.a-ul-inicio {
+    color: rgb(255, 119, 0);
+    display: inline-block;
+    padding: 0px 30px;
     font-size: 20px;
-    font-weight: 400;
+    list-style: none;
+    font-weight: 100;
+    
+}
+
+.a-ul-inicio1{
     color: #09f;
+}
+
+.a-ul-inicio-hover:hover{
+    color: #09f;
+
+}
+
+ul li{
+
+    display: inline-block;
+    padding: 0px 30px;
+    font-size: 20px;
+
+} 
+
+header {
+    background-color: white;
+    margin: none;
+    width: 100%;
+    clear: both;
+}
+
+/*FOOTER*/
+
+
+footer{
+    background-color: #09f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+}
+
+.footer-contenido{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 400px) { /* Cambia 'width' a 'min-width' */
+    .footer-contenido {   
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    } 
+}
+
+@media (min-width: 600px) {
+    .footer-contenido {   
+        grid-template-columns: repeat(4, 1fr); /* Tres columnas */
+    } 
+}
+
+.footer-section{
+    text-align: center;
+}
+
+h3{
+    color: white;
+    display: inline-block;
+}
+
+.a-footer-email{
+    color: black;
+}
+
+i{
+    color: white;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    
 }

@@ -23,11 +23,25 @@ a, a:hover {
 
 .a-ul-inicio1{
     color: #09f;
+    font-size: 1.6rem;
+}
+
+.a-ul-inicio-hover{
+    font-size: 1.6rem;
+}
+
+.amatic-sc-bold {
+    font-family: "Amatic SC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.a-ul-inicio1:hover{
+    font-size: 2rem;
 }
 
 .a-ul-inicio-hover:hover{
     color: #09f;
-
+    font-size: 2rem;
 }
 
 ul li{

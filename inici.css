@@ -36,13 +36,9 @@ a, a:hover {
     font-weight: 700;
     font-style: normal;
 }
-.a-ul-inicio1:hover{
-    font-size: 2rem;
-}
 
 .a-ul-inicio-hover:hover{
     color: #09f;
-    font-size: 2rem;
 }
 
 
@@ -83,7 +79,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(media/principal.jpg);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url(media/principal.jpg);
     background-size: cover;
     background-position: center;
     padding: 7%;
@@ -113,23 +109,30 @@ h2{
 footer{
     background-color: #09f;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
-    padding: 50px;
-    text-align: left;
+    padding: 20px 5%;
 }
 
 .footer-contenido{
-    margin: 0 auto;
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
+    max-width: 100%; /* Permitir que ocupe todo el ancho en pantallas pequeñas */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
 
+@media (min-width: 400px) { /* Cambia 'width' a 'min-width' */
+    .footer-contenido {   
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    } 
+}
+
+@media (min-width: 600px) {
+    .footer-contenido {   
+        grid-template-columns: repeat(4, 1fr); /* Tres columnas */
+    } 
 }
 
 .footer-section{
-    flex: 1;
     text-align: center;
- 
 }
 
 h3{
@@ -147,5 +150,4 @@ i{
     text-align: center;
     font-size: 30px;
     
-
 }
